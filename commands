@@ -1,0 +1,6 @@
+# installing solr as a docker container
+sudo docker run -p 8983:8983 -t solr:8.11.3
+
+# Creating a core in container 
+
+sudo docker exec -it --user solr <container_name> bin/solr create_core -c first_core
